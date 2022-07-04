@@ -22,4 +22,25 @@ int main()
 	}(12.34, 56.78);
 	
 	cout<<"\n addistion is = "<<result;
+	
+	
+	/* code to demonstrate lambda function taking a variable outside its scope in
+	   capture block, and expecting latest changed value, so we are using reference 
+	   otherwise value will not change
+	*/
+	   
+	int a{10};
+		
+	auto lamda_func = [&a]()->void{
+	cout<<"\n "<<a;
+	};
+	
+	for(int i=0;i< 5 ; i++)
+	{
+		lamda_func();
+		a++;
+	}
+
+	
+	
 }
