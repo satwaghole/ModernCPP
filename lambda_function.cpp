@@ -9,5 +9,12 @@ int main()
 	cout<<"\n Hello world";
 	};
 	
-	my_lamda_func();
+	my_lamda_func();   // calling lamda function
+	/* OR
+	
+	[]()->void{
+	cout<<"\n Hello world";
+	}();              // alternatively () at the end of the lamda function also call it, so no need to give name to lamda function 
+	
+	*/
 }
