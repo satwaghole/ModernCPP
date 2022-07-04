@@ -27,6 +27,12 @@ int main()
 	/* code to demonstrate lambda function taking a variable outside its scope in
 	   capture block, and expecting latest changed value, so we are using reference 
 	   otherwise value will not change
+	   
+	   If we want all ouside variable accessible in lamda function we can use = inside
+	   [] capture block. e.g [=] Note:- this is copy of all the varibles inside lamda
+	   
+	   If we want values should get reflecled into the outside code, we can use & inside
+	   lamda, e.g [&] Note: this will create references
 	*/
 	   
 	int a{10};
