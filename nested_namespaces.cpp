@@ -23,6 +23,7 @@ namespace a
 }
 
 //after c++17
+//This makes the code less error-prone as there is no need to pay attention to several levels of braces.
 namespace x::y::z
 {
 		class newsample
